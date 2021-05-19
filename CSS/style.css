@@ -1,6 +1,4 @@
 * {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -10,27 +8,33 @@
   border: 0;
   text-decoration: none;
   list-style-type: none;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 18px;
 }
 
 h1, h2 {
   color: #28283d;
 }
 
+h1, h2, p {
+  text-align: center;
+}
+
 h1 {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3.556rem;
+  line-height: 3.556rem;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 2.5rem;
-  line-height: 2.7rem;
+  font-size: 2.222rem;
+  line-height: 2.444rem;
   font-weight: 900;
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.7rem;
+  font-size: 0.8889rem;
+  line-height: 1.444rem;
   font-weight: 900;
   color: #4d96a8;
   text-transform: uppercase;
@@ -38,8 +42,8 @@ h3 {
 }
 
 p {
-  font-size: 1.13rem;
-  line-height: 1.6rem;
+  font-size: 1rem;
+  line-height: 1.444rem;
   color: #87879d;
 }
 
@@ -49,6 +53,7 @@ p {
   padding: 1rem 2rem;
   color: white;
   font-weight: 900;
+  font-size: 0.8889rem;
 }
 
 .btn-main {
@@ -57,6 +62,7 @@ p {
 
 .btn-main span {
   color: #8fe3f9;
+  font-weight: inherit;
 }
 
 .btn-main:hover {
@@ -81,5 +87,78 @@ p {
 
 .btn-secondary:hover span {
   color: #d9b8ff;
+}
+
+.logo {
+  height: 130px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  place-items: center;
+}
+
+.logo img {
+  width: 119px;
+  height: 28px;
+}
+
+section.mobile-width {
+  overflow: hidden;
+}
+
+section.mobile-width img {
+  height: auto;
+  left: -20px;
+  position: relative;
+  width: 110%;
+}
+
+* {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  margin: 3rem 3rem 1rem 3rem;
+}
+
+p {
+  margin: 1.5rem 1rem;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+section.hero {
+  margin: 0 auto;
+}
+
+.step {
+  margin: 4rem 0;
+}
+
+.step-circle {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #cdcdd6;
+  border-radius: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  color: #87879d;
+  font-weight: bold;
+}
+
+.step-line {
+  color: #87879d;
+  height: 84px;
+  margin: 0 auto;
+  width: 1px;
+  background: #cdcdd6;
 }
 /*# sourceMappingURL=style.css.map */
