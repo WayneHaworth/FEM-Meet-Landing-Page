@@ -1,0 +1,52 @@
+
+//colours
+$teal: rgb(77,150,168);
+$cyan: rgb(143,227,249);
+$dark-purple: rgb(133,95,177);
+$light-purple: rgb(217,184,255);
+$dark-grey: rgb(40,40,61);
+$light-grey: rgb(135,135,157);
+$off-white: rgb(250,250,250);
+$button-main-off: rgb(113,192,212);
+$button-secondary-off: rgb(177,139,221);
+
+* { 
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    //reset
+    margin:0;padding:0;outline:0;font-size:1em;font-weight:normal;font-style:normal;border:0;text-decoration:none;list-style-type:none;
+}
+
+h1, h2 { color: $dark-grey;}
+h1 { font-size:4rem; line-height: 4rem; font-weight: 900; }
+h2 { font-size:2.5rem; line-height: 2.7rem; font-weight: 900; }
+h3 { font-size:1rem; line-height: 1.7rem; font-weight: 900; color: $teal; text-transform: uppercase; letter-spacing: 4px; }
+p { font-size: 1.13rem; line-height: 1.6rem; color: $light-grey; }
+
+
+
+.btn {
+    height: 58px;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 900;
+}
+
+.btn-main {
+    background-color: $teal;
+    span { color: $cyan;}
+    &:hover {
+        background-color: $button-main-off;
+        span { color: $cyan; }
+    }
+}
+
+.btn-secondary {
+    background-color: $dark-purple;
+    span { color: $light-purple;}
+    &:hover {
+        background-color: $button-secondary-off;
+        span { color: $light-purple; }
+    }
+}

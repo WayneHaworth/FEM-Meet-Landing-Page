@@ -1,0 +1,85 @@
+* {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1, h2 {
+  color: #28283d;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-weight: 900;
+  color: #4d96a8;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 1.13rem;
+  line-height: 1.6rem;
+  color: #87879d;
+}
+
+.btn {
+  height: 58px;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+.btn-main {
+  background-color: #4d96a8;
+}
+
+.btn-main span {
+  color: #8fe3f9;
+}
+
+.btn-main:hover {
+  background-color: #71c0d4;
+}
+
+.btn-main:hover span {
+  color: #8fe3f9;
+}
+
+.btn-secondary {
+  background-color: #855fb1;
+}
+
+.btn-secondary span {
+  color: #d9b8ff;
+}
+
+.btn-secondary:hover {
+  background-color: #b18bdd;
+}
+
+.btn-secondary:hover span {
+  color: #d9b8ff;
+}
+/*# sourceMappingURL=style.css.map */
