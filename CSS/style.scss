@@ -19,19 +19,21 @@ $button-secondary-off: rgb(177,139,221);
 }
 
 h1, h2 { color: $dark-grey; }
-h1, h2, p { text-align: center; }
+h1, h2, h3, p { text-align: center; }
 h1 { font-size:3.556rem; line-height: 3.556rem; font-weight: 900; }
 h2 { font-size:2.222rem; line-height: 2.444rem; font-weight: 900; }
 h3 { font-size:0.8889rem; line-height: 1.444rem; font-weight: 900; color: $teal; text-transform: uppercase; letter-spacing: 4px; }
-p { font-size: 1rem; line-height: 1.444rem; color: $light-grey;}
+p { font-size: 1rem; line-height: 1.6; color: $light-grey;}
 
 .btn {
     height: 58px;
     border-radius: 50px;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     color: white;
     font-weight: 900;
-    font-size: 0.8889rem;
+    font-size: 1rem;
+    line-height: 0;
+    letter-spacing: 0.6px;
 }
 
 .btn-main {
@@ -45,7 +47,7 @@ p { font-size: 1rem; line-height: 1.444rem; color: $light-grey;}
 
 .btn-secondary {
     background-color: $dark-purple;
-    span { color: $light-purple;}
+    span { color: $light-purple; font-weight: inherit;}
     &:hover {
         background-color: $button-secondary-off;
         span { color: $light-purple; }
@@ -74,7 +76,10 @@ section.mobile-width img{
 //mobile
 * { font-size: 16px; }
 h1 { font-size: 2.5rem; line-height: 2.75rem; margin: 3rem 3rem 1rem 3rem;}
-p { margin: 1.5rem 1rem; }
+h2 { margin: 2rem; }
+h3 { font-size: 1rem;}
+p { margin: 2rem }
+
 button { display: block; margin: 0 auto; margin-bottom: 1rem;}
 section.hero { margin: 0 auto;}
 
@@ -90,6 +95,7 @@ section.hero { margin: 0 auto;}
     margin:0 auto;
     color: $light-grey;
     font-weight: bold;
+    background:white;
 }
 
 .step-line {
@@ -100,3 +106,39 @@ section.hero { margin: 0 auto;}
     background: lighten( $light-grey, 25% );
 }
 
+.image-grid { margin-bottom: 4rem; }
+.image-grid ul{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 1.6rem;
+    margin:2rem;
+
+    img { max-width: 100%; border-radius: 8px;}
+}
+
+footer {
+    margin-top: 13rem;
+    height: 428px;
+    position: relative;
+
+
+    .inner-content { position: relative; top: -7rem; }
+  
+    h2, p {
+        margin:2rem;
+        color: white;
+    }
+    p { font-size: 1.125rem;}
+
+    .btn { margin-top: 2rem;}
+}
+
+.tinted-image {
+    background: 
+      linear-gradient(
+        rgba($teal, 0.90), 
+        rgba($teal, 0.90)
+      ),
+      url(../images/image-footer-mobile.jpg);
+      background-size: cover;
+}
