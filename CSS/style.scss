@@ -80,7 +80,7 @@ h2 { margin: 2rem; }
 h3 { font-size: 1rem;}
 p { margin: 2rem }
 
-button { display: block; margin: 0 auto; margin-bottom: 1rem;}
+button { margin: 0 auto; margin-bottom: 1rem;}
 section.hero { margin: 0 auto;}
 
 
@@ -125,12 +125,11 @@ footer {
     .inner-content { position: relative; top: -7rem; }
   
     h2, p {
-        margin:2rem;
         color: white;
     }
     p { font-size: 1.125rem;}
 
-    .btn { margin-top: 2rem;}
+    .btn {  margin: 0 auto; margin-top: 4rem; display: flex;}
 }
 
 .tinted-image {
@@ -142,3 +141,34 @@ footer {
       url(../images/image-footer-mobile.jpg);
       background-size: cover;
 }
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 3rem;}
+    h2 { font-size: 2.5rem; max-width: 457px; margin: 2rem auto; }
+    h1, h2 { max-width: 339px; margin: 2rem auto; }
+    .hero p { max-width: 457px; margin: 2rem auto; }
+    p { max-width: 573px; margin: 2rem auto;}
+
+    button { margin: 0 1rem; }
+    .btn-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image-grid ul{ grid-template-columns: repeat(4, 1fr); grid-gap: 0.8rem; }
+
+    .tinted-image {
+        background: 
+          linear-gradient(
+            rgba($teal, 0.90), 
+            rgba($teal, 0.90)
+          ),
+          url(../images/image-footer-tablet.jpg);
+          background-size: cover;
+    }
+  }

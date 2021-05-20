@@ -139,7 +139,6 @@ p {
 }
 
 button {
-  display: block;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -204,7 +203,6 @@ footer .inner-content {
 }
 
 footer h2, footer p {
-  margin: 2rem;
   color: white;
 }
 
@@ -213,12 +211,71 @@ footer p {
 }
 
 footer .btn {
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tinted-image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url(../images/image-footer-mobile.jpg);
   background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(../images/image-footer-mobile.jpg);
   background-size: cover;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    max-width: 457px;
+    margin: 2rem auto;
+  }
+  h1, h2 {
+    max-width: 339px;
+    margin: 2rem auto;
+  }
+  .hero p {
+    max-width: 457px;
+    margin: 2rem auto;
+  }
+  p {
+    max-width: 573px;
+    margin: 2rem auto;
+  }
+  button {
+    margin: 0 1rem;
+  }
+  .btn-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image-grid ul {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8rem;
+  }
+  .tinted-image {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 150, 168, 0.9)), to(rgba(77, 150, 168, 0.9))), url(../images/image-footer-tablet.jpg);
+    background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(../images/image-footer-tablet.jpg);
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=style.css.map */
