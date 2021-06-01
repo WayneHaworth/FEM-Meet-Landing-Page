@@ -91,7 +91,7 @@ p { margin: 2rem }
 
 button { margin: 0 auto; margin-bottom: 1rem;}
 section.hero { margin: 0 auto; display: flex; flex-direction: column; justify-content: center;}
-section.hero .hero-faces { display: none;}
+section.hero .hero-faces { display: none; height: fit-content;}
 
 
 .step { margin: 4rem 0; }
@@ -126,6 +126,8 @@ section.hero .hero-faces { display: none;}
     img { max-width: 100%; border-radius: 8px;}
 }
 
+article { margin:0 auto; width: 327px;}
+
 footer {
     transform: translateY(9rem);
     height: 428px;
@@ -159,8 +161,8 @@ footer {
 
 @media (min-width: 768px) {
     h1 { font-size: 3rem;}
-    h2 { font-size: 2.5rem; max-width: 457px; margin: 2rem auto; }
-    h1, h2 { max-width: 339px; margin: 2rem auto; }
+    h2 { font-size: 2.5rem; margin: 2rem auto; }
+    h1, h2 { margin: 2rem auto; }
     .hero p { max-width: 457px; margin: 2rem auto; }
     p { max-width: 573px; margin: 2rem auto;}
 
@@ -181,12 +183,14 @@ footer {
           url(../images/image-footer-tablet.jpg);
           background-size: cover;
     }
+
+    article { margin:0 auto; width: 445px;}
   }
 
 @media (min-width: 1000px) {
     section.faces-background { display: none; }
     section.hero .hero-faces { display: flex; width: 100%; }
-    section.hero .hero-faces img { width: 80%; height: auto; min-width: 394px; max-width: 600px;}
+    section.hero .hero-faces img { width: 80%; height: fit-content;; min-width: 394px; max-width: 600px;}
     section.hero .faces-left { justify-content: flex-start; flex-grow: 1;}
     section.hero .faces-right { justify-content: flex-end; flex-grow: 1;}
     section.hero { flex-direction: row; }
@@ -200,5 +204,9 @@ footer {
         }
     }
 
-    .step { margin-top:10rem; }
+    article { width: 450px;}
+
+
+
+    .step-1 { margin-top:10rem; }
 }
